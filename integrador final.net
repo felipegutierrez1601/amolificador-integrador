@@ -1,0 +1,13 @@
+* C:\Users\Felipe guierrez\Desktop\integrador\integrador final.asc
+R1 N001 N003 1k
+C1 N002 N001 0.47µ
+R2 N002 N001 1000K
+V1 N003 0 SINE(0 8 1k)
+V2 v+ 0 15
+V3 v- 0 -15
+R3 N004 0 1K
+XU1 N004 N001 v+ v- N002 LM741
+.tran 200m uic
+.lib LM741.lib
+.backanno
+.end
